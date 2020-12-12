@@ -9,7 +9,7 @@ public class live_board {
     public static void main(String[] args) throws Exception {
         Map<String,Member> members =new HashMap<>();
         String repoPath = "whiteship/live-study";
-        String token = "423003f2a160be29cfe547797e28351bb47af9c7";
+        String token = "자신의 토큰값";
 
         GitHub github = new GitHubBuilder().withOAuthToken(token).build();
         GHRepository repository = github.getRepository(repoPath);
