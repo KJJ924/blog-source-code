@@ -4,9 +4,13 @@ public class MainSolution {
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName());
         MyThreadByThread thread =new MyThreadByThread();
+        thread.setDaemon(true);
         thread.start();
 
-        Thread thread1 = new Thread(new MyThreadByRunnable());
-        thread1.start();
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
