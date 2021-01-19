@@ -8,14 +8,6 @@ public class Solution {
 
         Calculate.sum(10,20);
 
-
-
-
-
-
-
-
-
         List<Object> objectNumberList  =new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
