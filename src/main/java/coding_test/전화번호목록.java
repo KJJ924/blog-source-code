@@ -1,4 +1,4 @@
-package CodingTest;
+package coding_test;
 import java.util.*;
 import java.util.stream.Collectors;
 public class 전화번호목록 {
