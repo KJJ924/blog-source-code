@@ -8,7 +8,7 @@ public class 위장 {
         Map<String,Integer> category = new HashMap<>();
 
         for (String[] clothe : clothes) {
-            category.merge(clothe[1], 1, (a, b) -> category.get(clothe[b]) + b);
+            category.merge(clothe[1], 1, (a, b) -> a + b);
         }
         int answer = 1;
         for (String s : category.keySet()) {
