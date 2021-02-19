@@ -43,11 +43,7 @@ public class 베스트앨범 {
                     result.add(integerIntegerEntry.getKey()); //결과에 담기.
                 }
             }
-            int[] answer = new int[result.size()];
-            for (int i = 0; i < answer.length; i++) {
-                answer[i]= result.get(i);
-            }
-            return answer;
+            return result.stream().mapToInt(i->i).toArray();
         }
     }
 
